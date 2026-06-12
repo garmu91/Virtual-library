@@ -49,8 +49,10 @@ This project is a **virtual bookstore web application** that allows you to:
 ## 🚀 **Install and Execute**
 
 ### **1. Clone repository**
-bash
+In bash:
+
 git clone https://github.com/garmu91/Virtual-library.git
+
 cd Virtual-library
 
 ### **2. Install dependencies**
@@ -58,6 +60,7 @@ npm install
 
 ### **3. Execute app**
 Open the testlibreria/index.html file in your preferred browser (e.g., Chrome, Firefox).
+
 Note: This project does not require a local server to run, but using one (such as a Live Server in VS Code) will improve the experience.
 
 ### **4. Execute tests**
