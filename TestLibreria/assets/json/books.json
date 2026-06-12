@@ -1,0 +1,326 @@
+{
+  "library": [
+    {
+      "book": {
+        "title": "Le Petit Prince",
+        "pages": 96,
+        "genre": "Fable",
+        "cover": {
+          "src": "https://petit-prince-collection.com/images/photos_livres_GD/PP-4261_A.gif",
+          "alt": "Couverture de Le Petit Prince"
+        },
+        "synopsis": "Un conte philosophique pour enfants et adultes.",
+        "year": 1943,
+        "ISBN": "978-2070612758",
+        "author": {
+          "name": "Antoine de Saint-Exupéry",
+          "otherBooks": ["Vol de nuit", "Terre des hommes"]
+        },
+        "stock": 0,
+        "price": 9.99,
+        "location": "A1-01",
+        "supplier": "Éditions Gallimard"
+      }
+    },
+    {
+      "book": {
+        "title": "Le Seigneur des anneaux",
+        "pages": 1200,
+        "genre": "Fantasie",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1566425108i/33.jpg",
+          "alt": "Couverture de Le Seigneur des anneaux"
+        },
+        "synopsis": "Une aventure épique dans un monde fantastique appelé la Terre du Milieu.",
+        "year": 1954,
+        "ISBN": "978-0618640157",
+        "author": {
+          "name": "J.R.R. Tolkien",
+          "otherBooks": ["Le Hobbit", "Le Silmarillion"]
+        },
+        "stock": 15,
+        "price": 14.99,
+        "location": "A1-02",
+        "supplier": "Éditions Gallimard"
+      }
+    },
+    {
+      "book": {
+        "title": "Game of Thrones",
+        "pages": 694,
+        "genre": "Fantasie",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1273763400i/8189620.jpg",
+          "alt": "Couverture de Game of Thrones"
+        },
+        "synopsis": "Dans un royaume où les saisons durent des années, une bataille épique pour le trône se déroule.",
+        "year": 1996,
+        "ISBN": "978-0553103540",
+        "author": {
+          "name": "George R. R. Martin",
+          "otherBooks": [
+            "La Bataille des rois",
+            "L'Épée de feu",
+            "Un festin pour les corbeaux"
+          ]
+        },
+        "stock": 15,
+        "price": 19.99,
+        "location": "A1-03",
+        "supplier": "Éditions Gallimard"
+      }
+    },
+    {
+      "book": {
+        "title": "Harry Potter à l'école des sorciers",
+        "pages": 223,
+        "genre": "Fantasie",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1550337333i/15868.jpg",
+          "alt": "Couverture de Harry Potter à l'école des sorciers"
+        },
+        "synopsis": "Un garçon découvre qu'il est magicien et entame une aventure dans une école de magie.",
+        "year": 1997,
+        "ISBN": "978-0747532699",
+        "author": {
+          "name": "J.K. Rowling",
+          "otherBooks": [
+            "Harry Potter et la Chambre des secrets",
+            "Harry Potter et le Prisonnier d'Azkaban",
+            "Harry Potter et la Coupe de feu"
+          ]
+        },
+        "stock": 15,
+        "price": 19.99,
+        "location": "A1-04",
+        "supplier": "Éditions Gallimard"
+      }
+    },
+    {
+      "book": {
+        "title": "1984",
+        "pages": 328,
+        "genre": "Science-fiction",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg",
+          "alt": "Couverture de 1984"
+        },
+        "synopsis": "Une vision inquiétante d'un avenir dystopique et totalitaire.",
+        "year": 1949,
+        "ISBN": "978-0451524935",
+        "author": {
+          "name": "George Orwell",
+          "otherBooks": ["La Ferme des animaux"]
+        },
+        "stock": 15,
+        "price": 9.99,
+        "location": "B1-01",
+        "supplier": "Hachette Livre"
+      }
+    },
+    {
+      "book": {
+        "title": "Apocalypse Zombie",
+        "pages": 444,
+        "genre": "Zombies",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1422626176i/24762432.jpg",
+          "alt": "Couverture de Apocalypse Zombie"
+        },
+        "synopsis": "Un Galicien reste chez lui pendant une apocalypse zombie et finit par presque sauver le monde.",
+        "year": 2001,
+        "ISBN": "978-4444532611",
+        "author": {
+          "name": "Manel Loreiro",
+          "otherBooks": []
+        },
+        "stock": 15,
+        "price": 9.99,
+        "location": "B1-02",
+        "supplier": "Hachette Livre"
+      }
+    },
+    {
+      "book": {
+        "title": "Dune",
+        "pages": 412,
+        "genre": "Science-fiction",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg",
+          "alt": "Couverture de Dune"
+        },
+        "synopsis": "Sur la planète désertique et inhospitalière d'Arrakis, une grande intrigue politique et familiale se dévoile.",
+        "year": 1965,
+        "ISBN": "978-0441172719",
+        "author": {
+          "name": "Frank Herbert",
+          "otherBooks": ["Le Messie de Dune", "Les Enfants de Dune"]
+        },
+        "stock": 15,
+        "price": 17.99,
+        "location": "B1-03",
+        "supplier": "Hachette Livre"
+      }
+    },
+    {
+      "book": {
+        "title": "H2G2 : Le Guide du voyageur galactique",
+        "pages": 216,
+        "genre": "Science-fiction",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653311117i/6691227.jpg",
+          "alt": "Couverture de H2G2 : Le Guide du voyageur galactique"
+        },
+        "synopsis": "Un voyage absurde et comique à travers l'espace, avec des serviettes.",
+        "year": 1979,
+        "ISBN": "978-0345391803",
+        "author": {
+          "name": "Douglas Adams",
+          "otherBooks": [
+            "Le Dernier Restaurant avant la fin du monde",
+            "La Vie, l'Univers et le Reste"
+          ]
+        },
+        "stock": 15,
+        "price": 9.99,
+        "location": "B1-04",
+        "supplier": "Hachette Livre"
+      }
+    },
+    {
+      "book": {
+        "title": "Neuromancien",
+        "pages": 271,
+        "genre": "Science-fiction",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554437249i/6088007.jpg",
+          "alt": "Couverture de Neuromancien"
+        },
+        "synopsis": "Une vision prophétique de la cyberréalité et de l'intelligence artificielle.",
+        "year": 1984,
+        "ISBN": "978-0441569595",
+        "author": {
+          "name": "William Gibson",
+          "otherBooks": ["Comte Zéro", "Mona Lisa s'éclate"]
+        },
+        "stock": 15,
+        "price": 9.99,
+        "location": "B1-05",
+        "supplier": "Hachette Livre"
+      }
+    },
+    {
+      "book": {
+        "title": "Fahrenheit 451",
+        "pages": 249,
+        "genre": "Science-fiction",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1383718290i/13079982.jpg",
+          "alt": "Couverture de Fahrenheit 451"
+        },
+        "synopsis": "Une société future où les livres sont interdits et où des « pompiers » brûlent tous les livres qu'ils trouvent.",
+        "year": 1953,
+        "ISBN": "978-1451673319",
+        "author": {
+          "name": "Ray Bradbury",
+          "otherBooks": ["Chroniques martiennes", "L'homme illustré"]
+        },
+        "stock": 15,
+        "price": 9.99,
+        "location": "B1-06",
+        "supplier": "Hachette Livre"
+      }
+    },
+    {
+      "book": {
+        "title": "Shining, l'enfant lumière",
+        "pages": 688,
+        "genre": "Horreur",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1641398308i/60038757.jpg",
+          "alt": "Couverture de Shining"
+        },
+        "synopsis": "Une famille s'installe dans un hôtel isolé pour l'hiver, où une présence sinistre pousse le père à la violence.",
+        "year": 1977,
+        "ISBN": "978-0307743657",
+        "author": {
+          "name": "Stephen King",
+          "otherBooks": ["Carrie", "Ça"]
+        },
+        "stock": 15,
+        "price": 11.99,
+        "location": "C1-01",
+        "supplier": "Éditions Callidor"
+      }
+    },
+    {
+      "book": {
+        "title": "Dracula",
+        "pages": 418,
+        "genre": "Horreur",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387151694i/17245.jpg",
+          "alt": "Couverture de Dracula"
+        },
+        "synopsis": "L'histoire du tristement célèbre comte Dracula et de sa tentative de quitter la Transylvanie pour l'Angleterre.",
+        "year": 1897,
+        "ISBN": "978-0486411095",
+        "author": {
+          "name": "Bram Stoker",
+          "otherBooks": ["Le Joyau des sept étoiles", "Le Repaire du ver blanc"]
+        },
+        "stock": 15,
+        "price": 9.99,
+        "location": "C1-02",
+        "supplier": "Éditions Callidor"
+      }
+    },
+    {
+      "book": {
+        "title": "Frankenstein",
+        "pages": 280,
+        "genre": "Horreur",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669159060i/63631742.jpg",
+          "alt": "Couverture de Frankenstein"
+        },
+        "synopsis": "Un scientifique obsédé crée une créature vivante à partir de morceaux de corps volés, avec des conséquences désastreuses.",
+        "year": 1818,
+        "ISBN": "978-0486282114",
+        "author": {
+          "name": "Mary Shelley",
+          "otherBooks": ["Le Dernier Homme", "Valperga"]
+        },
+        "stock": 15,
+        "price": 9.99,
+        "location": "C1-03",
+        "supplier": "Éditions Callidor"
+      }
+    },
+    {
+      "book": {
+        "title": "L'Appel de Cthulhu",
+        "pages": 43,
+        "genre": "Horreur",
+        "cover": {
+          "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1485924654i/34094154.jpg",
+          "alt": "Couverture de L'Appel de Cthulhu"
+        },
+        "synopsis": "L'histoire d'un monstre antique qui menace de ressusciter et de dominer le monde.",
+        "year": 1928,
+        "ISBN": "978-1542461690",
+        "author": {
+          "name": "H.P. Lovecraft",
+          "otherBooks": [
+            "L’Abomination de Dunwich",
+            "Les Montagnes hallucinées"
+          ]
+        },
+        "stock": 15,
+        "price": 9.99,
+        "location": "C1-04",
+        "supplier": "Éditions Callidor"
+      }
+    }
+  ]
+}
