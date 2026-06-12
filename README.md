@@ -23,11 +23,17 @@ This project is a **virtual bookstore web application** that allows you to:
 
 ## ✨ **Features**
 ✅ **Book Catalog**: View books with images, synopses, and details.
+
 ✅ **Advanced Filters**: Filter by genre, stock, and location in the bookstore.
+
 ✅ **Shopping Cart**: Add/remove books with stock validation.
+
 ✅ **Stock Management**: Automatic stock updates when adding books to the cart.
+
 ✅ **Light/Dark Theme**: Switch themes with a dedicated button.
+
 ✅ **Automated Testing**: Unit and integration tests with **Jest**.
+
 ✅ **Responsive Design**: Adapted for tablets and desktops.
 
 ---
