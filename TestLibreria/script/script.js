@@ -79,7 +79,7 @@ function initThemeToggle() {
 // =============================================
 async function loadBooks() {
   try {
-    const response = await fetch("./assets/json/books.json");
+    const response = await fetch("./TestLibreria/assets/json/books.json");
     if (!response.ok) throw new Error("Failed to load books");
 
     const data = await response.json();
@@ -883,7 +883,7 @@ function closeNotification() {
   };
 }
 
-module.exports = {
+export default {
   STATE,
   normalizeBookData,
   updateStock,
