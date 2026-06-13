@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr"> <!-- For better accessibility -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO and accessibility -->
+    <meta name="description" content="Bibliothèque Virtuelle - Gestion de livres avec fonctionnalités logistiques">
+
+    <title>Bibliothèque Virtuelle | Gestion de Livres et Logistique</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <!-- Preload critical resources for performance -->
+    <link rel="preload" href="./TestLibreria/css/styles.css" as="style">
+    <link rel="stylesheet" href="./TestLibreria/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!--
+        Theme Toggle Button
+        - Uses SVG icons for day/night mode
+        - Fixed position for accessibility
+    -->
+    <button id="theme-switch" aria-label="Basculer entre le mode jour et nuit">
+        <!-- Moon Icon (Night Mode) -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"
+            aria-hidden="true">
+            <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+        </svg>
+        <!-- Sun Icon (Day Mode) -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"
+            aria-hidden="true">
+            <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+        </svg>
+    </button>
+
+    <!--
+        Main Content
+        - Semantic HTML5 for better accessibility and SEO
+    -->
+    <main aria-label="Contenu principal de la bibliothèque">
+        <!-- Books Section -->
+        <section aria-labelledby="available-books-heading">
+            <h1 id="catalogue-total-heading">Livres en vente</h1>
+            <h2 id="available-books-heading">Livres en stock</h2>
+
+            <!-- Filters Section -->
+            <div id="filters-section" aria-labelledby="filters-heading" role="search">
+                <!-- Hidden heading for accessibility -->
+                <h2 id="filters-heading" class="visually-hidden">Filtres</h2>
+
+                <!-- Genre Filter -->
+                <div class="filter-group">
+                    <label for="genre-filter">Filtrer par genre</label>
+                    <select name="genre-filter" id="genre-filter" aria-label="Sélectionner un genre">
+                        <option value="select">Tous les genres</option>
+                    </select>
+                    <!-- aria-live for dynamic updates -->
+                    <span id="available-book-genre" aria-live="polite"></span>
+                </div>
+
+                <!-- Stock Filter (For Logistics) -->
+                <div class="filter-group">
+                    <label for="stock-filter">Filtrer par stock</label>
+                    <select id="stock-filter" aria-label="Sélectionner un état de stock">
+                    </select>
+                    <span id="available-book-stock" style="display: none;" aria-live="polite"></span>
+                </div>
+
+                <!-- Location Filter (For Logistics) -->
+                <div class="filter-group">
+                    <label for="location-filter">Filtrer par emplacement</label>
+                    <input type="text" id="location-filter" placeholder="Ex: A1-23"
+                        aria-label="Filtrer par emplacement dans l'entrepôt">
+                    <span id="available-book-location" style="display: none;" aria-live="polite"></span>
+                </div>
+            </div>
+
+            <!-- Books Container -->
+            <div id="book-template" aria-labelledby="available-books-heading" role="region" aria-live="polite">
+                <!-- Book Template (Hidden) -->
+                <div class="book visually-hidden" aria-hidden="true">
+                    <div class="book-front">
+                        <b><span class="title"></span></b>
+                        <!-- lazy loading for performance -->
+                        <img class="cover" src="#" alt="Couverture du livre" loading="lazy">
+                        <div class="book-actions">
+                            <div class="quantity-selector">
+                                <button class="decrement" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="quantity-input" min="0" max="0" value="1" data-id="#"
+                                    data-title="#" aria-label="Input for selecting quantity">
+                                <button class="increment" aria-label="Increase quantity">+</button>
+                            </div>
+                            <button class="add-to-cart" aria-label="Add to cart" data-id="${book.ISBN}">
+                                ➕ Add to Cart
+                            </button>
+                            <button class="flip-button" aria-label="View book details">ℹ️</button>
+                        </div>
+                    </div>
+                    <div class="book-back">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping List Section node -v
+v22.14.0 npm -v
+8.19.2-->
+        <section id="shopping-list" class="shopping-list" aria-labelledby="shopping-list-heading">
+            <h2 id="shopping-list-heading">Liste d'achats</h2>
+            <div>
+                <ul id="list" aria-label="Liste des livres sélectionnés"></ul>
+            </div>
+            <!-- Export to CSV Button (For Logistics) -->
+            <button id="export-csv" aria-label="Exporter la liste d'achats en CSV">
+                <i class="fas fa-file-csv"></i> Exporter en CSV
+            </button>
+            <button id="clear-cart-button">🗑️ Vider panier</button>
+        </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal" aria-label="Notification d'erreur" role="region" aria-live="assertive"></div>
+    </main>
+
+    <!-- Load jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Load main script as module -->
+    <script type="module" src="./TestLibreria/script/script.js"></script>
+</body>
+
+</html>
